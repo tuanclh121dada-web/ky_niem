@@ -138,36 +138,86 @@
     </div>
   </section>
 
-  <!-- KHOẢNH KHẮC POLAROID -->
-  <section class="py-12 px-4 max-w-5xl mx-auto relative z-20">
+  <!-- KHOẢNH KHẮC POLAROID (MỞ RỘNG 6 ẢNH) -->
+  <section class="py-12 px-4 max-w-6xl mx-auto relative z-20">
     <div class="text-center mb-10">
-      <h2 class="font-handwriting text-4xl sm:text-5xl text-pink-600 mb-2">Khoảnh Khắc Của Chúng Mình 📸</h2>
+      <h2 class="font-handwriting text-4xl sm:text-5xl text-pink-600 mb-2">Góc Nhỏ Của Chúng Mình 📸</h2>
+      <p class="text-sm text-pink-500">(Chạm vào khung để thêm những tấm ảnh mà em thích nhất nhé!)</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <!-- Khung ảnh 1 -->
       <div class="polaroid rounded-xl transform -rotate-2">
         <div class="block relative overflow-hidden rounded-lg aspect-[4/5] bg-pink-50 border-2 border-pink-200">
           <img src="download (1).jpg" onerror="this.onerror=null; this.src='download (1).png';" class="w-full h-full object-cover" alt="Kỷ niệm 1" />
         </div>
         <p class="font-handwriting text-2xl text-center text-pink-700 mt-4">Nụ cười xinh nhất của em ✨</p>
       </div>
+
+      <!-- Khung ảnh 2 -->
       <div class="polaroid rounded-xl transform rotate-1">
         <div class="block relative overflow-hidden rounded-lg aspect-[4/5] bg-pink-50 border-2 border-pink-200">
           <img src="download.jpg" onerror="this.onerror=null; this.src='download.png';" class="w-full h-full object-cover" alt="Kỷ niệm 2" />
         </div>
         <p class="font-handwriting text-2xl text-center text-pink-700 mt-4">Đi đâu cũng được, miễn là cùng em 💕</p>
       </div>
+
+      <!-- Khung ảnh 3 -->
       <div class="polaroid rounded-xl transform -rotate-1">
         <label class="cursor-pointer block relative group overflow-hidden rounded-lg aspect-[4/5] bg-pink-50 border-2 border-dashed border-pink-200 flex flex-col items-center justify-center">
           <img id="img-preview-3" src="" class="hidden w-full h-full object-cover" alt="Kỷ niệm 3" />
           <div id="placeholder-3" class="text-center p-4">
-            <div class="text-5xl mb-2">💐💖</div>
-            <p class="text-pink-500 font-semibold text-sm">Kỷ niệm 20/10 đáng nhớ</p>
+            <div class="text-5xl mb-2">📸</div>
+            <p class="text-pink-500 font-semibold text-sm">Góc nghiêng thần thánh</p>
             <span class="inline-block mt-2 text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full">+ Nhấn để chọn ảnh</span>
           </div>
           <input type="file" accept="image/*" class="hidden" onchange="loadPhoto(event, 3)" />
         </label>
-        <p class="font-handwriting text-2xl text-center text-pink-700 mt-4">Mãi bên anh như thế này nhé! 🌸</p>
+        <p class="font-handwriting text-2xl text-center text-pink-700 mt-4">Vô tình lọt vào ống kính anh 😍</p>
       </div>
+
+      <!-- Khung ảnh 4 -->
+      <div class="polaroid rounded-xl transform rotate-2 mt-4 sm:mt-0">
+        <label class="cursor-pointer block relative group overflow-hidden rounded-lg aspect-[4/5] bg-pink-50 border-2 border-dashed border-pink-200 flex flex-col items-center justify-center">
+          <img id="img-preview-4" src="" class="hidden w-full h-full object-cover" alt="Kỷ niệm 4" />
+          <div id="placeholder-4" class="text-center p-4">
+            <div class="text-5xl mb-2">🍣😋</div>
+            <p class="text-pink-500 font-semibold text-sm">Bữa ăn ngon nhất</p>
+            <span class="inline-block mt-2 text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full">+ Nhấn để chọn ảnh</span>
+          </div>
+          <input type="file" accept="image/*" class="hidden" onchange="loadPhoto(event, 4)" />
+        </label>
+        <p class="font-handwriting text-2xl text-center text-pink-700 mt-4">Ngon nhất là được ăn cùng em 🍲</p>
+      </div>
+
+      <!-- Khung ảnh 5 -->
+      <div class="polaroid rounded-xl transform -rotate-2 mt-4 sm:mt-0">
+        <label class="cursor-pointer block relative group overflow-hidden rounded-lg aspect-[4/5] bg-pink-50 border-2 border-dashed border-pink-200 flex flex-col items-center justify-center">
+          <img id="img-preview-5" src="" class="hidden w-full h-full object-cover" alt="Kỷ niệm 5" />
+          <div id="placeholder-5" class="text-center p-4">
+            <div class="text-5xl mb-2">🚗✈️</div>
+            <p class="text-pink-500 font-semibold text-sm">Chuyến đi đáng nhớ</p>
+            <span class="inline-block mt-2 text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full">+ Nhấn để chọn ảnh</span>
+          </div>
+          <input type="file" accept="image/*" class="hidden" onchange="loadPhoto(event, 5)" />
+        </label>
+        <p class="font-handwriting text-2xl text-center text-pink-700 mt-4">Hành trình tuyệt vời của hai đứa 🌤️</p>
+      </div>
+
+      <!-- Khung ảnh 6 -->
+      <div class="polaroid rounded-xl transform rotate-1 mt-4 sm:mt-0">
+        <label class="cursor-pointer block relative group overflow-hidden rounded-lg aspect-[4/5] bg-pink-50 border-2 border-dashed border-pink-200 flex flex-col items-center justify-center">
+          <img id="img-preview-6" src="" class="hidden w-full h-full object-cover" alt="Kỷ niệm 6" />
+          <div id="placeholder-6" class="text-center p-4">
+            <div class="text-5xl mb-2">🤝💖</div>
+            <p class="text-pink-500 font-semibold text-sm">Lời hứa ngọt ngào</p>
+            <span class="inline-block mt-2 text-xs bg-pink-100 text-pink-600 px-3 py-1 rounded-full">+ Nhấn để chọn ảnh</span>
+          </div>
+          <input type="file" accept="image/*" class="hidden" onchange="loadPhoto(event, 6)" />
+        </label>
+        <p class="font-handwriting text-2xl text-center text-pink-700 mt-4">Mãi nắm tay nhau như thế này nhé! 🥰</p>
+      </div>
+
     </div>
   </section>
 
